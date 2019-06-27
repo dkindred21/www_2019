@@ -140,7 +140,6 @@
                         <!-- End Links -->
                       </li>
                        <!-- End Links -->
-                      </li>
                     </ul>
                   </div>
                 </div>
@@ -475,6 +474,7 @@
             </li>
             <!-- End Account Signin -->
           </ul>
+        </div>
         </nav>
         <!-- End Nav -->
       </div>
@@ -500,7 +500,7 @@
             <div class="col-lg-5">
               <!-- Signup Form -->
               <div class="bg-white shadow-sm rounded p-6">
-                <form class="js-validate">
+                <form class="js-validate" method="POST" action="https://formspree.io/accounts@oldwestcompanies.com">
                   <div class="mb-4">
                     <h2 class="h4">Request Account Access Here</h2>
                   </div>
@@ -510,10 +510,21 @@
                     <div class="js-focus-state input-group input-group form">
                       <input type="text" class="form-control form__input" name="Account No." required
                              placeholder="Enter your Account No."
-                             aria-label="Enter your username">
+                             aria-label="Enter your Account No">
                     </div>
                   </div>
                   <!-- End Input -->
+                  
+				  <!-- Input -->
+                  <div class="js-form-message mb-3">
+                    <div class="js-focus-state input-group input-group form">
+                      <input type="text" class="form-control form__input" name="FullName" required
+                             placeholder="Full Name"
+                             aria-label="Full Name">
+                    </div>
+                  </div>
+                  <!-- End Input -->
+
 
                   <!-- Input -->
                   <div class="js-form-message mb-3">
@@ -535,7 +546,7 @@
                   </div>
                   <!-- End Input -->
 
-                  <button type="submit" class="btn btn-block btn-primary">Get Started</button>
+                  <button type="submit" class="btn btn-block btn-primary">Submit</button>
                 </form>
               </div>
               <!-- End Signup Form -->
@@ -1341,7 +1352,7 @@
 
   <!-- JS Implementing Plugins -->
   <script src="assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-  <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="assets/vendor/jquery-validation/dist/jquery.validate.js"></script>
   <script src="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="assets/vendor/custombox/dist/custombox.min.js"></script>
   <script src="assets/vendor/custombox/dist/custombox.legacy.min.js"></script>

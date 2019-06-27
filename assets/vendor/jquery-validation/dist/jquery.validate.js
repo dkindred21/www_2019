@@ -83,7 +83,7 @@ $.extend( $.fn, {
 					}
 
 					if ( validator.settings.submitHandler ) {
-						result = validator.settings.submitHandler.call( validator, validator.currentForm, event );
+						//result = validator.settings.submitHandler.call( validator, validator.currentForm, event );
 						if ( hidden ) {
 
 							// And clean up afterwards; thanks to no-block-scope, hidden can be referenced
